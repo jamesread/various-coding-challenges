@@ -1,0 +1,16 @@
+Calculating a doctors minutes worked for a given shift.
+Input: start datetime, end datetime (day of year and hour of day. minutes is always zero)
+Output: how many premium minutes and non-premium minutes are included in the shift (two integers, multiples of 60)
+Logic: Premium minutes are before 7am and after 7pm, plus weekends. All hours on a weekend are considered premium. Non-premium minutes are between 7am and 7pm.
+
+E.g. if start time is 2016-03-21 (Monday) at 06:00 and end time is 2016-03-21 at 10:00
+Premium minutes: 60
+Non-premium minutes: 180
+
+If start time is 2016-03-25 (Friday) at 00:00 and end time is 2016-03-25 at 12:00
+Premium minutes: 5 * 60 (7-12)
+Non-premium minutes: 7 * 60 (0-7)
+
+If start time is 2016-03-26 (Saturday) at 00:00 and end time is 2016-03-26 at 12:00
+Premium minutes: 12 * 60
+Non-premium minutes: 0 (weekend)
