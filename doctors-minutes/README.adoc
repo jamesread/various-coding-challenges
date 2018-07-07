@@ -1,3 +1,11 @@
+= Notes on my implementation
+
+* Using python3
+* PEP-8 compliant (style guide). Ignore line lengths because I think it's stupid.
+* Includes pyunit-3 unit test.
+
+= Challenge 
+
 Calculating a doctors minutes worked for a given shift.
 Input: start datetime, end datetime (day of year and hour of day. minutes is always zero)
 Output: how many premium minutes and non-premium minutes are included in the shift (two integers, multiples of 60)
@@ -8,8 +16,8 @@ Premium minutes: 60
 Non-premium minutes: 180
 
 If start time is 2016-03-25 (Friday) at 00:00 and end time is 2016-03-25 at 12:00
-Premium minutes: 5 * 60 (7-12)
-Non-premium minutes: 7 * 60 (0-7)
+Premium minutes: 7 * 60 (0-7)
+Non-premium minutes: 5 * 60 (7-12)
 
 If start time is 2016-03-26 (Saturday) at 00:00 and end time is 2016-03-26 at 12:00
 Premium minutes: 12 * 60
