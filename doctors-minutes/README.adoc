@@ -1,8 +1,8 @@
 = Notes on my implementation
 
-* Using python3
+* Using python3, implemented in `/src/` as a importable module, tests in `/tests`. 
+* Includes full pyunit-3 unit test coverage, based on the examples from the challenge below.
 * PEP-8 compliant (style guide). Ignore line lengths because I think it's stupid.
-* Includes pyunit-3 unit test.
 
 = Challenge 
 
